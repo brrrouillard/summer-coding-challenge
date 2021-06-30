@@ -1,20 +1,28 @@
 import './App.css';
 import Details from './containers/details'
 import Players from './components/Players'
-
-const MOCK_PLAYER = {
-  name: 'John Doe',
-  age: '23',
-  country: 'Belgium',
-  position: 'Goalkeeper'
-}
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
 
 function App() {
   return (
+    <Router>
     <div>
-      <Details player={MOCK_PLAYER} />
-      <Players />
+      <Switch>
+        <Route path='/details'>
+          <div className='w-full py-8'>
+            <Details />
+          </div>
+        </Route>
+        <Route path='/'>
+          <Players />
+        </Route>
+      </Switch>
     </div>
+  </Router>
   );
 }
 
