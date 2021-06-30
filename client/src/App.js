@@ -12,10 +12,8 @@ function App() {
     <Router>
     <div>
       <Switch>
-        <Route path='/details'>
-          <div className='w-full py-8'>
-            <Details />
-          </div>
+        <Route path='/details' render={(params)=><div className='w-full py-8'><Details {...params}/>
+          </div>}>
         </Route>
         <Route path='/'>
           <Players />

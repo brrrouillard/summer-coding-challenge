@@ -3,8 +3,7 @@ import {
 } from 'react-router-dom';
 
 function Details(props) {
-  console.log({props})
-  const { player } = props
+  const { player } = props.location
   if (!player) {
     return null
   }

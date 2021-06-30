@@ -28,3 +28,14 @@ cd client && yarn && yarn start
 ### Accessing
 
 Go to http://localhost:3000 and build your dream team
+
+
+# About
+
+### Dream team of Devs
+
+- Gabriel
+- Juan
+- Matthieu
+- Philippe
+
